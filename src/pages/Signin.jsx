@@ -41,7 +41,7 @@ const Signin = () => {
       setLoading(true);
       setError(null)
 
-      const res = await axios.post("http://localhost:4000/api/login", 
+      const res = await axios.post("https://backend-linkedin.vercel.app/api/login", 
         // state variables(req.body)
         {
           email, password

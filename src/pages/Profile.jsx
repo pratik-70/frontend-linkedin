@@ -26,7 +26,7 @@ const Profile = () => {
   const handleUpdateProfile = async(e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("http://localhost:4000/api/create-profile",
+      const response = await axios.post("https://backend-linkedin.vercel.app/api/create-profile",
         {headline, userId: currentUser._id, summary,
             experience : {
               companyName,

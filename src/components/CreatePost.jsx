@@ -24,7 +24,7 @@ const CreatePost = () => {
         return alert("Kindly fill something to post!");
       }
       const response = await axios.post(
-        "http://localhost:4000/api/create-post",
+        "https://backend-linkedin.vercel.app/api/create-post",
         // body
         {
           content,
